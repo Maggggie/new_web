@@ -1,0 +1,136 @@
+body {
+	font-family: "Lato", sans-serif;
+}
+.mySlides {
+	display: none;
+}
+/* -- Navbar section -- */
+.nav{
+	margin-top:46px;
+}
+#w3-content{
+	max-width:2000px;
+	margin-top:46px;
+}
+#intro{
+	width: 100%;
+  height: 400px;
+  background: url(img/mountain.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+}
+/* -- About section -- */
+#about{
+	max-width:1400px;
+}
+.w3-row{
+	display:flex;
+}
+.myText{
+	flex:1;
+}
+.w3-justify ul li{
+	float:left;
+	text-align: left;
+}
+/* -- Skills section -- */
+.w3-container{
+	max-width:800px;
+}
+.w3-hover-opacity{
+	width:100%;
+}
+a {
+	text-decoration: none;
+}
+
+.call-outs-container {
+  max-width: 1400px;
+  margin: 40px auto 0 auto;
+}
+.call-out {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  flex-basis: 30%;
+}
+@media (min-width: 900px) {
+  .call-outs-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.call-out:nth-child(1) {background-color: orange;}
+.call-out:nth-child(2) {background-color: darkturquoise;}
+.call-out:nth-child(3) {background-color: plum;}
+/* -- Contact section -- */
+.contact-cntainer{
+	display: flex;
+}
+.banner {
+  height: 200px;
+  max-width: 600px;
+  margin: 40px auto 40px auto;
+  background-color: black;
+  display: flex;
+  flex: 1;
+}
+
+.center-me {
+  color: white;
+  margin: auto;
+}
+
+.center-me p{
+  color: lime; 
+  font-family: "Courier";
+  font-size: 20px;
+  margin: 10px 0 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+
+.center-me p:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+.center-me p:nth-child(3){
+  animation: type2 16s steps(60, end);
+}
+
+.center-me p a{
+  color: lime;
+  text-decoration: none;
+}
+
+.center-me span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+::selection{
+  background: black;
+}
+/* -- Footer -- */
+.myFooter{
+	width: 100%;
+	text-align: center;
+	background: black;
+	color: whitesmoke;
+}
